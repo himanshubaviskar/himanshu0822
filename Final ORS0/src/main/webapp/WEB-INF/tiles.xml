@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "https://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	<definition name="BaseLayout" template="/WEB-INF/pages/BaseLayout.jsp">
+		<put-attribute name="header" value="/WEB-INF/pages/Header.jsp"></put-attribute>
+		<put-attribute name="menu" value="/WEB-INF/pages/Menu.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/pages/Body.jsp"></put-attribute>
+		<put-attribute name="footer" value="/WEB-INF/pages/Footer.jsp"></put-attribute>
+	</definition>
+	
+
+
+	<definition name="Welcome" extends="BaseLayout">
+		<put-attribute name="menu" value="/WEB-INF/pages/Menu.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/pages/Welcome.jsp"></put-attribute>
+	</definition>
+
+	 <definition name="Login" extends="BaseLayout">
+		<put-attribute name="menu" value="/WEB-INF/pages/Menu.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/pages/LoginView.jsp"></put-attribute>
+		
+	</definition>
+
+	
+
+	<definition name="ForgetPassword" extends="BaseLayout">
+		<put-attribute name="menu" value="/WEB-INF/pages/Menu.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/pages/ForgetPassword.jsp"></put-attribute>
+	</definition>
+
+	
+
+	<definition name="ChangePassword" extends="BaseLayout">
+		<put-attribute name="menu" value="/WEB-INF/pages/Menu.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/pages/ChangePassword.jsp"></put-attribute>
+	</definition>
+
+	
+
+
+	<definition name="Role" extends="BaseLayout">
+		<put-attribute name="menu" value="/WEB-INF/pages/Menu.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/pages/Role.jsp"></put-attribute>
+	</definition>
+
+		
+	
+	<definition name="Course" extends="BaseLayout">
+		<put-attribute name="menu" value="/WEB-INF/pages/Menu.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/pages/Course.jsp"></put-attribute>
+	</definition>
+
+	
+	<definition name="Subject" extends="BaseLayout">
+		<put-attribute name="menu" value="/WEB-INF/pages/Menu.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/pages/Subject.jsp"></put-attribute>
+	</definition>
+
+	
+	
+	<definition name="GetMarksheet" extends="BaseLayout">
+		<put-attribute name="menu" value="/WEB-INF/pages/Menu.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/pages/GetMarksheet.jsp"></put-attribute>
+	</definition>
+
+	
+
+	
+</tiles-definitions>  
